@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+            let str = "We will, welcome will rock welness you";
+            function resolved(str) {
+            console.log('Resolved');
+            }
+
+            function rejected(result) {
+            console.error(result);
+            }
+
+            Promise.reject(new Error('fail')).then(resolved, rejected);
+
+            // alert(str.match(/\w+));
+            let str2 = "I love JavaScript";
+            let regexp = /LOVE/i;
+
+            // alert(regexp.test(str2));
+    </script>
+  </body>
+</html>
